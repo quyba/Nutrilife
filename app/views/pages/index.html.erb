@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="es" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="es">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Nutrilife</title>
+  <meta name="description" content="Powered by Quyba">
+  <meta name="author" content="Carlos Beltran">
+
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+   <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+
+    <script>
+
+    </script>
+
+</head>
+<body class="no-trans">
+    <!-- scrollToTop -->
+    <!-- ================ -->
+    <div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+    <!-- header start -->
+    <!-- ================ -->
+    <header class="header fixed clearfix navbar navbar-fixed-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+
+            <!-- header-left start -->
+            <!-- ================ -->
+            <div class="header-left clearfix">
+
+              <!-- logo -->
+              <div class="logo smooth-scroll">
+                <a href="#banner"><%= image_tag "Home/Nutrilife.png", class:"logon" %></a>
+              </div>
+
+
+
+            </div>
+            <!-- header-left end -->
+
+          </div>
+          <div class="col-md-8">
+
+            <!-- header-right start -->
+            <!-- ================ -->
+            <div class="header-right clearfix">
+
+              <!-- main-navigation start -->
+              <!-- ================ -->
+              <div class="main-navigation animated">
+
+                <!-- navbar start -->
+                <!-- ================ -->
+                <nav class="navbar navbar-default" role="navigation">
+                  <div class="container-fluid">
+
+                    <!-- Toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#banner">Inicio</a></li>
+                        <li><a href="#services">Nosotros</a></li>
+                        <li><a href="#portfolio">Brigadas</a></li>
+                        <li><a href="#catalogo">Catalogo</a></li>
+                        <li><a href="#contact">Contactenos</a></li>
+                        <li><a href="/shop" target="_blank">Tienda</a></li>
+
+
+                      </ul>
+                    </div>
+
+                  </div>
+                </nav>
+                <!-- navbar end -->
+
+              </div>
+              <!-- main-navigation end -->
+
+            </div>
+            <!-- header-right end -->
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- banner start -->
+    <!-- ================ -->
+    <div id="banner" class="banner">
+
+      <ul>
+          <li><%= image_tag "Home/BannerIma2.png" %></li>
+          <li><%= image_tag "prob.png" %></li>
+          <li><%= image_tag "Home/BannerIma.png" %></li>
+
+      </ul>
+
+    </div>
+    <!-- banner end -->
+
+    <!-- section start -->
+    <!-- ================ -->
+    <div class="section translucent-bg bg-image-1 blue">
+      <div class="container object-non-visible" data-animation-effect="fadeIn">
+
+        <h1 id="services"  class="text-center title">Nosotros</h1>
+        <div class="space"></div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="media">
+              <div class="media-body text-right">
+                <h3 class="media-heading">Misión</h3>
+                <p>Contribuir con el desarrollo y mejoramiento de la calidad de vida de nuestros consumidores asegurando la satisfacción de sus necesidades y brindarles una opción alternativa y natural</p>
+              </div>
+              <div class="media-right">
+                <i class="fa fa-cog"></i>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-body text-right">
+                <h3 class="media-heading">Visión</h3>
+                <p>Nuestra visión es ser una  empresa ampliamente competitiva en la Producción y comercialización de productos alimenticios naturales, posicionada en el mercado y reconocida internacionalmente por la calidad de sus productos, garantía de confiabilidad y su contribución en el mejoramiento del bienestar y calidad de vida de las personas.</p>
+              </div>
+              <div class="media-right">
+                <i class="fa fa-eye"></i>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-body text-right">
+                <h3 class="media-heading">Calidad</h3>
+                <p>Pensando en el desarrollo y calidad de vida de la comunidad NUTRILIFE comercializa a nivel nacional productos alimenticios naturales, suplementos dietarios y fitoterapeuticos confiables con el fin de garantizar el bienestar del consumidor.</p>
+              </div>
+              <div class="media-right">
+                <i class="fa fa-plus"></i>
+              </div>
+            </div>
+
+          </div>
+          <div class="space visible-xs"></div>
+          <div class="col-sm-6">
+            <div class="media">
+              <div class="media-left">
+                <i class="fa fa-leaf"></i>
+              </div>
+              <div class="media-body">
+                <h3 class="media-heading">Productos Naturales</h3>
+                <p>Todos nuestros tratamientos naturales son elaborados y envasados en Colombia. Nuestro moderno laboratorio cumple con las rigurosas normas de calidad. Sepa que cada vez que nos elija, tendrá en sus manos un producto natural, efectivo y libre de riesgos para su salud.</p>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left">
+                <i class="fa fa-users"></i>
+              </div>
+              <div class="media-body">
+                <h3 class="media-heading">Nuestra Gente</h3>
+                <p>La familia NUTRILIFE comparte los mismos valores y objetivos. Respetamos y valoramos a nuestros clientes, brindamos excelente y cálida atención, y agotamos todos los recursos hasta obtener su satisfacción.</p>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left">
+                <i class="fa fa-child"></i>
+              </div>
+              <div class="media-body">
+                <h3 class="media-heading">Valores</h3>
+                <p>Nuestros valores confirman el compromiso hacia nuestros clientes.</p>
+                <ul>
+                  <li>Respeto</li>
+                  <li>Honestidad</li>
+                  <li>Responsabilidad</li>
+                  <li>Lealtad</li>
+                  <li>Solidaridad</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section end -->
+
+    <!-- section start -->
+    <!-- ================ -->
+
+    <!-- section end -->
+
+
+
+    <!-- section start -->
+    <!-- ================ -->
+    <div class="default-bg space blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1 class="text-center">¡Alimentos Naturales Para Tu Vida!</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section end -->
+
+    <!-- section start -->
+    <!-- ================ -->
+    <div class="section">
+      <div class="container">
+        <h1 class="text-center title" id="portfolio">Brigadas</h1>
+        <div class="separator"></div>
+        <p class="lead text-center">NUTRILIFE COLOMBIA es una empresa que ofrece servicios de tamizaje, riesgo cardiovascular y terapia anti estrés, sirviendo a todas aquellas empresas que se preocupan por la salud y el bienestar de sus empleados, apoyándolas, en la realización de la semana de la salud . </p>
+
+        <p class="lead text-center">En estas brigadas atendemos al personal de la empresa sin costo alguno con el fin de que el empleado sepa su estado de salud y así aplicar los correctivos a tiempo, evitando tambien el ausentismo laboral e incrementando la productividad, ya que esta actividad es un excelente proceso de motivacion mejorando asi el clima laboral y el sentido de pertenencia con la empresa. </p>
+        <br>
+        <div class="row object-non-visible" data-animation-effect="fadeIn">
+          <div class="col-md-12">
+
+            <!-- isotope filters start -->
+            <div class="filters text-center">
+              <ul class="nav nav-pills">
+                <li class="active"><a href="#" data-filter="*">Todo</a></li>
+                <li><a href="#" data-filter=".web-design">Salud Preventiva</a></li>
+                <li><a href="#" data-filter=".app-development">Terapia Anti Estres</a></li>
+
+              </ul>
+            </div>
+            <!-- isotope filters end -->
+
+            <!-- portfolio items start -->
+            <div class="isotope-container row grid-space-20">
+              <div class="col-sm-6 col-md-3 isotope-item web-design">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <%= image_tag "bascula.jpg"%>
+                    <a class="overlay" data-toggle="modal" data-target="#project-1">
+                      <i class="fa fa-search-plus"></i>
+                      <span>Salud Preventiva</span>
+                    </a>
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-1">IMC</a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                        <h4 class="modal-title" id="project-1-label">I.M.C</h4>
+                      </div>
+                      <div class="modal-body">
+                        <h3>Índice de Masa Corporal</h3>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p>El índice de masa corporal es una herramienta sencilla y útil a la hora de evaluar los riesgos asociados a la salud, con solo conocer peso y altura se pueden establecer umbrales efectivos para evaluar las zonas de riesgo entre el sobrepeso y la desnutrición.</p>
+
+                          </div>
+                          <div class="col-md-6">
+                            <%= image_tag "bascula.jpg"%>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal end -->
+              </div>
+
+              <div class="col-sm-6 col-md-3 isotope-item web-design">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <%= image_tag "presion-arterial.jpg"%>
+                    <a class="overlay" data-toggle="modal" data-target="#project-2">
+                      <i class="fa fa-search-plus"></i>
+                      <span>Salud Preventiva</span>
+                    </a>
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-2">Presion Arterial</a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="project-2" tabindex="-1" role="dialog" aria-labelledby="project-2-label" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                        <h4 class="modal-title" id="project-2-label">Presion Arterial</h4>
+                      </div>
+                      <div class="modal-body">
+                          <div class="row">
+                          <div class="col-md-6">
+                            <p>La única manera de saber si la presión arterial está alta, es midiéndola regularmente, varias veces al día y durante varios meses. La presión arterial alta puede no causar ningún síntoma; por ello es importante medir la presión regularmente, aun cuando no se sienta que está alta.</p>
+                            <p>El medirse la presión arterial no es un tratamiento para la presión alta. Para ayudar a tratar la presión alta, tal vez necesite llevar una alimentación sana, mantener un peso saludable, hacer suficiente ejercicio y no fumar. Su médico puede también recomendarle medicamentos para ayudarle a bajar la presión arterial. El medirse la presión arterial regularmente es sólo una parte del plan para que reduzca la presión arterial alta.</p>
+                          </div>
+                          <div class="col-md-6">
+                            <%= image_tag "presion-arterial.jpg"%>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal end -->
+              </div>
+
+              <div class="col-sm-6 col-md-3 isotope-item web-design">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <%= image_tag "nutricionista2.png"%>
+                    <a class="overlay" data-toggle="modal" data-target="#project-3">
+                      <i class="fa fa-search-plus"></i>
+                      <span>Salud Preventiva</span>
+                    </a>
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-3">Diagnostico Cuantico</a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="project-3" tabindex="-1" role="dialog" aria-labelledby="project-3-label" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                        <h4 class="modal-title" id="project-3-label">Diagnostico Cuantico</h4>
+                      </div>
+                      <div class="modal-body">
+                          <div class="row">
+                          <div class="col-md-6">
+                            <p>En solo 60 segundos usted podrá saber cómo está su estado de Salud, sin tener que extraer sangre, entregar muestras o pasar largo tiempo con aparatos, esto gracias a un moderno método llamado Analizador Cuántico Bio-Eléctrico que permite un completo análisis de su Salud.</p>
+                            <p>Por medio de las ondas electromagnéticas podemos ver que parte de nuestro cuerpo de descompensa energéticamente, revelándonos una posible enfermedad y así poderla tratar a tiempo o inclusive llegar a prevenirla.</p>
+                          </div>
+                          <div class="col-md-6">
+                            <%= image_tag "nutricionista2.png"%>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal end -->
+              </div>
+
+              <div class="col-sm-6 col-md-3 isotope-item web-design">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <%= image_tag "nutricion.jpg"%>
+                    <a class="overlay" data-toggle="modal" data-target="#project-5">
+                      <i class="fa fa-search-plus"></i>
+                      <span>Salud Preventiva</span>
+                    </a>
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-5">Evaluación Nutricional</a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="project-5" tabindex="-1" role="dialog" aria-labelledby="project-5-label" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                        <h4 class="modal-title" id="project-5-label">Evaluacion Nutricional</h4>
+                      </div>
+                      <div class="modal-body">
+                          <div class="row">
+                          <div class="col-md-6">
+                            <p>Se realiza una evaluación del estado nutricional, donde se lleva a cabo la medicion de indicadores alimentarios y nutricionales relacionados con el estado
+                            de salud, para identificar la posible ocurrencia, naturaleza y extensión de las alteraciones del estado nutricional, las cuales pueden ir de la deficiencia a la toxicidad. </p>
+                          </div>
+                          <div class="col-md-6">
+                            <%= image_tag "nutricion.jpg"%>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal end -->
+              </div>
+
+              <div class="col-sm-6 col-md-3 isotope-item app-development">
+                <div class="image-box">
+                  <div class="overlay-container">
+                    <%= image_tag "scannerdepiel.png", class: "scanner"%>
+                    <a class="overlay" data-toggle="modal" data-target="#project-6">
+                      <i class="fa fa-search-plus"></i>
+                      <span>Terapia Anti Estrés</span>
+                    </a>
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-6">Scaner de piel</a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="project-6" tabindex="-1" role="dialog" aria-labelledby="project-6-label" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                        <h4 class="modal-title" id="project-6-label">Scaner de piel</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p>Ayuda a reconocer y diagnosticar problemas de la piel, imperfecciones,  degeneración de tejidos imposibles de detectar a simple vista. </p>
+                            <p>Con el scanner podremos diagnosticar:</p>
+                            <ul>
+                              <li>Zonas de resequedad</li>
+                              <li>Alteraciones en la melanina</li>
+                              <li>Manchas por venir</li>
+                              <li>Maltrato o deformación de tejidos en áreas
+especificas</li>
+                              <li>Localización de la grasa</li>
+                              <li>Presencia de células muertas</li>
+
+                            </ul>
+                          </div>
+                          <div class="col-md-6">
+                             <%= image_tag "scannerdepiel.png"%>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal end -->
+              </div>
+
+              <div class="col-sm-6 col-md-3 isotope-item app-development">
+                <div class="image-box">
+                  <div class="overlay-container">
+                     <%= image_tag "limpiezafacial.jpg"%>
+                    <a class="overlay" data-toggle="modal" data-target="#project-7">
+                      <i class="fa fa-search-plus"></i>
+                      <span>Terapia anti estrés</span>
+                    </a>
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-7">Limpieza Facial</a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="project-7" tabindex="-1" role="dialog" aria-labelledby="project-7-label" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                        <h4 class="modal-title" id="project-7-label">Limpieza Facial</h4>
+                      </div>
+                      <div class="modal-body">
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p>Consiste en retirar celulas muertas, contaminantes ambientales y fisiologicos, beneficiando asi el proceso miotico de renovacion celular, previniendo la formacion de impurezas (puntos negros).</p>
+                            <p>Aporta principios activos y vitaminas que llevan a la piel a su equilibrio natural, dejando asi tu piel en optimas condiciones.</p>
+                          </div>
+                          <div class="col-md-6">
+                             <%= image_tag "limpiezafacial.jpg"%>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal end -->
+              </div>
+
+              <div class="col-sm-6 col-md-3 isotope-item app-development">
+                <div class="image-box">
+                  <div class="overlay-container">
+                     <%= image_tag "exfmanos.jpg"%>
+                    <a class="overlay" data-toggle="modal" data-target="#project-8">
+                      <i class="fa fa-search-plus"></i>
+                      <span>Terapia Anti Estrés</span>
+                    </a>
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-8">Exfoliación de manos</a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="project-8" tabindex="-1" role="dialog" aria-labelledby="project-8-label" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                        <h4 class="modal-title" id="project-8-label">Exfoliación de Manos</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p>Tratamiento de microdermoabracion que activa la circulación, suaviza la piel y promueve la regeneración de células muertas.</p>
+                            <p>La efectividad de un exfoliante en la piel no depende de la fuerza con la que se frote si no de la regularidad con que se aplique, sus beneficios se pierden si se exfolia cada varios meses y se frota hasta enrojecer la piel. Lo aconsejable es hacerlo con regularidad, mediante movimientos muy suaves.</p>
+                          </div>
+                          <div class="col-md-6">
+                             <%= image_tag "exfmanos.jpg"%>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal end -->
+              </div>
+
+              <div class="col-sm-6 col-md-3 isotope-item app-development">
+                <div class="image-box">
+                  <div class="overlay-container">
+                     <%= image_tag "sillas.jpg", class: "antiestres"%>
+                    <a class="overlay" data-toggle="modal" data-target="#project-9">
+                      <i class="fa fa-search-plus"></i>
+                      <span>Terapia Anti Estrés</span>
+                    </a>
+                  </div>
+                  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-9">Masaje Anti Estrés</a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="project-9" tabindex="-1" role="dialog" aria-labelledby="project-9-label" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                        <h4 class="modal-title" id="project-9-label">Masaje Anti Estrés</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p>Activa la sangre y la oxigena, normaliza el sistema nervioso. Relaja fibras musculares, reactiva el sistema respiratorio, alivia dolencias como dolor o cansancio muscular, calambres Migraña.</p>
+                          </div>
+                          <div class="col-md-6">
+                             <%= image_tag "sillas.jpg"%>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal end -->
+              </div>
+
+
+
+            </div>
+            <!-- portfolio items end -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section end -->
+        <h1  class="text-center title">Catalogo</h1>
+<div style="text-align:center;"><iframe src="//v.calameo.com/?bkcode=004464803e79c46224c01&mode=mini&showsharemenu=false&clickto=view&clicktarget=_self" width="1000" height="550" frameborder="0" scrolling="no" allowtransparency allowfullscreen style="margin:0 auto;"></iframe><div style="margin:4px 0px 8px;"><a href="/shop" target="_blank">Visita nuestra tienda.</a></div></div>
+    <!-- section start -->
+    <!-- ================ -->
+    <div class="default-bg space blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1 class="text-center">1000+ Clientes Felices!</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section end -->
+
+    <!-- footer start -->
+    <!-- ================ -->
+    <footer id="footer">
+
+      <!-- .footer start -->
+      <!-- ================ -->
+      <div class="footer section">
+        <div class="container">
+          <h1 class="title text-center" id="contact">Contactenos</h1>
+          <div class="space"></div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="footer-content">
+                <p class="large">NUTRILIFE tiene como objetivo principal mejorar la salud de las personas desde, la prevención de enfermedades por medio de productos naturales de alta calidad, además, brindando sus servicios a todas aquellas empresas que se interesan en la salud de sus empleados y su bienestar.</p>
+                <ul class="list-icons">
+                  <li><i class="fa fa-map-marker pr-10"></i> Calle 39B sur N° 72J - 45 </li>
+                  <li><i class="fa fa-phone pr-10"></i> +57(1) 4664606 </li>
+                  <li><i class="fa fa-phone pr-10"></i> +57 3204781582 </li>
+                  <li><i class="fa fa-envelope-o pr-10"></i> info@nutrilife.com.co</li>
+                </ul>
+                <ul class="social-links">
+                  <li class="facebook"><a target="_blank" href="https://www.facebook.com/nutrilifecolombia"><i class="fa fa-facebook"></i></a></li>
+                  <li class="twitter"><a target="_blank" href="https://twitter.com/nutrilifecol"><i class="fa fa-twitter"></i></a></li>
+                  <li class="pinterest"><a target="_blank" href="http://www.pinterest.com/nutrilifecol"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="footer-content">
+                <form role="form" id="footer-form">
+                  <div class="form-group has-feedback">
+                    <label class="sr-only" for="name2">Nombre</label>
+                    <input type="text" class="form-control" id="name2" placeholder="Nombre" name="name2" required>
+                    <i class="fa fa-user form-control-feedback"></i>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <label class="sr-only" for="email2">Email</label>
+                    <input type="email" class="form-control" id="email2" placeholder="Escriba su email" name="email2" required>
+                    <i class="fa fa-envelope form-control-feedback"></i>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <label class="sr-only" for="message2">Mensaje</label>
+                    <textarea class="form-control" rows="8" id="message2" placeholder="Mensaje" name="message2" required></textarea>
+                    <i class="fa fa-pencil form-control-feedback"></i>
+                  </div>
+                  <input type="submit" value="Enviar" class="btn btn-default">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .footer end -->
+
+      <!-- .subfooter start -->
+      <!-- ================ -->
+      <div class="subfooter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-center">Copyright © 2015 Nutrilife.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .subfooter end -->
+
+    </footer>
+    <!-- footer end -->
+
+
+
+  </body>
+</html>

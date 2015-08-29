@@ -1,0 +1,36 @@
+/*
+Theme Name: Worthy - Free Powerful Theme by HtmlCoder
+Author:HtmlCoder
+Author URI:http://www.htmlcoder.me
+Version:1.0.0
+Created:November 2014
+License: Creative Commons Attribution 3.0 License (https://creativecommons.org/licenses/by/3.0/)
+File Description: Place here your custom CSS styles
+*/
+
+.banner:after {
+	background-color: transparent !important;
+}
+
+.banner { position: relative; overflow: auto; }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }
+
+.logon{
+	height: 69px;
+}
+
+/*.cat {
+	height: 400px;
+	width: 100%;
+}*/
+
+.scanner {
+    width: 150px;
+    height: 180px;
+    margin-left: 60px;
+}
+
+.antiestres {
+	height: 180px;
+}
