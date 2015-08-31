@@ -54,3 +54,4 @@ gem 'spree_i18n', git: 'git://github.com/spree/spree_i18n.git', branch: '3-0-sta
 
 gem 'rails_12factor', group: :production
 ruby "2.2.2"
+gem 'puma'
