@@ -8,14 +8,13 @@ License: Creative Commons Attribution 3.0 License (https://creativecommons.org/l
 File Description: Place here your custom CSS styles
 */
 
-.banner:after {
-	background-color: transparent !important;
+#slider {
+	height: 100%;
 }
 
-.banner { position: relative; overflow: auto; }
-    .banner li { list-style: none; }
-        .banner ul li { float: left; }
-
+.vegas-timer-progress{
+	background: blue !important;
+}
 .logon{
 	height: 69px;
 }

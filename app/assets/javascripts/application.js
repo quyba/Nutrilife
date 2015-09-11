@@ -10,11 +10,12 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
-
+//= require vegas.js
 
 //= require modernizr.js
 //= require isotope/isotope.pkgd.min.js
@@ -24,7 +25,8 @@
 //= require custom.js
 //= require jquery.easing.1.3.js
 //= require jquery.booklet.latest.min.js
-//= require unslider.min.js
+
+
 
 //= require turn.js
 //= require turn.html4.min.js

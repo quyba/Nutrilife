@@ -135,11 +135,7 @@ blockquote {
 	position: relative;
 	color: #fff;
 }
-.banner-image {
-	vertical-align: middle;
-	min-height: 100%;
-	width: 100%;
-}
+
 .banner:after {
 	position: absolute;
 	top: 0;
@@ -237,7 +233,7 @@ blockquote {
 	position: relative;
 }
 .bg-image-1 {
-	background: url("bgnosotros.jpg") 50% 0px no-repeat;
+	background: url(asset-url("bgnosotros.jpg")) 50% 0px no-repeat;
 }
 .bg-image-2 {
 	background: url("../images/bg-image-2.jpg") 50% 0px no-repeat;

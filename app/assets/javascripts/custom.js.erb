@@ -1,0 +1,47 @@
+/* Theme Name: Worthy - Free Powerful Theme by HtmlCoder
+ * Author:HtmlCoder
+ * Author URI:http://www.htmlcoder.me
+ * Version:1.0.0
+ * Created:November 2014
+ * License: Creative Commons Attribution 3.0 License (https://creativecommons.org/licenses/by/3.0/)
+ * File Description: Place here your custom scripts
+ */
+
+ // $("#example").vegas({
+ //     slides: [
+ //         { src: "<%= asset_path('/Banner/prob.png') %>"  },
+ //         { src: "<%= asset_path('/Banner/banner 2.png') %>" },
+ //         { src: "<%= asset_path('/Banner/Banner 3.png') %>" },
+ //         { src: "<%= asset_path('/Banner/Banner.png') %>" }
+ //     ]
+ // });
+
+$(function($) {
+
+    $('#slider').vegas ({
+      // overlay: false,
+      transition: 'zoomOut2',
+      // transitionDuration: 4000,
+      delay: 10000,
+      // animation: 'random',
+      // animationDuration: 20000,
+
+      timer: true,
+
+        slides: [
+            { src: "<%= asset_path('Banner/Banner1.png') %>" },
+            { src: "<%= asset_path('Banner/Banner2.png') %>" },
+            { src: "<%= asset_path('Banner/Banner3.png') %>" },
+						{ src: "<%= asset_path('Banner/Banner4.png') %>" },
+            { src: "<%= asset_path('Banner/Banner5.png') %>" }
+        ]
+    });
+
+
+
+    });
+
+
+
+
+// Load the HTML4 version if there's not CSS transform
