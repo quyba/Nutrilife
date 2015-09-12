@@ -16,30 +16,28 @@
  //     ]
  // });
 
-$(function($) {
+$(function ($) {
 
-    $('#slider').vegas ({
+    $('#slider').vegas({
       // overlay: false,
-      transition: 'zoomOut2',
+        transition: 'zoomOut2',
       // transitionDuration: 4000,
-      delay: 10000,
+        delay: 10000,
       // animation: 'random',
       // animationDuration: 20000,
-
-      timer: true,
+        timer: true,
 
         slides: [
             { src: "<%= asset_path('Banner/Banner1.png') %>" },
             { src: "<%= asset_path('Banner/Banner2.png') %>" },
             { src: "<%= asset_path('Banner/Banner3.png') %>" },
-						{ src: "<%= asset_path('Banner/Banner4.png') %>" },
+            { src: "<%= asset_path('Banner/Banner4.png') %>" },
             { src: "<%= asset_path('Banner/Banner5.png') %>" }
         ]
     });
 
 
-
-    });
+});
 
 
 
