@@ -15,7 +15,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require vegas.js
+
 
 //= require modernizr.js
 //= require isotope/isotope.pkgd.min.js
@@ -25,7 +25,7 @@
 //= require custom.js
 //= require jquery.easing.1.3.js
 //= require jquery.booklet.latest.min.js
-
+//= require vegas.js
 
 
 //= require turn.js
